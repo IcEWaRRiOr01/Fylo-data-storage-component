@@ -1,0 +1,312 @@
+:root { /* Colors */
+
+    /* Primary */
+    --gradient-1: hsl(6, 100%, 80%);
+    --gradient-2: hsl(335, 100%, 65%);
+
+    /* Neutral */
+    --pale-blue: hsl(243, 100%, 93%);
+    --grayish-blue: hsl(229, 7%, 55%);
+    --dark-blue: hsl(228, 56%, 26%);
+    --very-dark-blue: hsl(229, 57%, 11%);
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    background-image: url(./images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    width: 85.95vw;
+    height: 53vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 33.5vw;
+    border-radius: 2.5vw 26.5vw 2.5vw 2.5vw;
+    background-color: var(--dark-blue);
+}
+
+.logo {
+    margin-top: 10.6vw;
+    margin-left: 10.8vw;
+    width: 35.7vw;
+}
+
+.control-buttons-wrapper {
+    width: 47.1vw;
+    height: 13.1vw;
+    margin-left: 10.5vw;
+    margin-top: 8.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.control-button {
+    width: 13vw;
+    height: 13vw;
+    border-radius: 3vw;
+    background-color: var(--very-dark-blue);
+    border-color: var(--very-dark-blue);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.file {
+    background-image: url(./images/icon-document.svg);
+    background-size: 5.4vw;
+}
+
+.folder {
+    background-image: url(./images/icon-folder.svg);
+}
+
+.cloud {
+    background-image: url(./images/icon-upload.svg);
+}
+
+.folder, .cloud {
+    background-size: 6.4vw;
+}
+
+.main {
+    width: 85.95vw;
+    height: 42.2vw;
+    margin-left: 6.65vw;
+    margin-top: 4.3vw;
+    border-radius: 2.6vw;
+    padding-top: 7.8vw;
+    background-color: var(--dark-blue);
+    margin-bottom: 15vw;
+}
+
+.main-text {
+    color: var(--pale-blue);
+    text-align: center;
+    font-size: 3.76vw;
+    margin-left: 0.6vw;
+}
+
+.progress {
+    width: 69vw;
+    height: 5.2vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3.5vw;
+    border-radius: 4vw;
+    background-color: var(--very-dark-blue);
+    border: 0.7vw solid var(--very-dark-blue);
+}
+
+.color {
+    width: 51vw;
+    height: 3.65vw;
+    margin-top: 0.07vw;
+    border-radius: 2vw;
+    padding-top: 0.52vw;
+    background: linear-gradient(to right, var(--gradient-1), var(--gradient-2));
+}
+
+.thumb {
+    width: 2.58vw;
+    height: 2.58vw;
+    margin-left: 47.75vw;
+    border-radius: 2vw;
+    background-color: var(--pale-blue);
+}
+
+.hover {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10.55vw;
+    width: 47.3vw;
+    height: 19.1vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2.7vw;
+    padding-top: 1.9vw;
+
+    background-color: var(--pale-blue);
+}
+
+.value {
+    margin-left: 6.6vw;
+    font-size: 10.3vw;
+}
+
+.value-info {
+    margin-top: 5.5vw;
+    font-size: 3.5vw;
+    text-transform: uppercase;
+    margin-left: 2.8vw;
+    color: var(--grayish-blue);
+}
+
+.min, .max {
+    display: block;
+    width: fit-content;
+    font-size: 3.2vw;
+    color: var(--pale-blue);
+}
+
+.min {
+    margin-top: -27.5vw;
+    margin-left: 8.5vw;
+}
+
+.max {
+    margin-left: 64.85vw;
+    margin-top: -4.9vw;
+}
+
+.attribution { 
+    font-size: 3vw; 
+    text-align: center;
+    color: var(--pale-blue);
+    margin-bottom: 30vw;
+}
+
+.attribution a { 
+    color: var(--gradient-1);
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-color: var(--very-dark-blue);
+        background-image: url(./images/bg-desktop.png);
+        background-position: 0 215%;
+        background-size: 100vw;
+        background-repeat: no-repeat;
+    }
+
+    .header {
+        width: 24.4vw;
+        height: 14vw;
+        margin-left: 18vw;
+        margin-right: 0;
+        margin-top: 20.05vw;
+        border-radius: 0.7vw 7.1vw 0.7vw 0.7vw;
+    }
+
+    .logo {
+        margin-top: 2.8vw;
+        margin-left: 3vw;
+        width: 9.3vw;
+    }
+
+    .control-buttons-wrapper {
+        width: 12.24vw;
+        height: 3.35vw;
+        margin-left: 2.9vw;
+        margin-top: 2.3vw;
+    }
+    
+    .control-button {
+        width: 3.35vw;
+        height: 3.35vw;
+        border-radius: 0.6vw;
+    }
+    
+    .file {
+        background-size: 1.4vw;
+    }
+    
+    .folder, .cloud {
+        background-size: 1.6vw;
+    }
+
+    .main {
+        width: 37.46vw;
+        height: 10.7vw;
+        margin-left: 44.48vw;
+        margin-top: -10.71vw;
+        border-radius: 0.6vw;
+        padding-top: 2.5vw;
+        margin-bottom: 0vw;
+    }
+    
+    .main-text {
+        text-align: left;
+        font-size: 1vw;
+        margin-left: 2.7vw;
+    }
+    
+    .progress {
+        width: 31.8vw;
+        height: 1.2vw;
+        margin-top: -0.1vw;
+        border-radius: 4vw;
+        border-width: 0.15vw;
+    }
+    
+    .color {
+        width: 23.55vw;
+        height: 0.85vw;
+        margin-top: 0vw;
+        border-radius: 2vw;
+        padding-top: 0.52vw;
+    }
+    
+    .thumb {
+        width: 0.7vw;
+        height: 0.7vw;
+        margin-left: 22.7vw;
+        margin-top: -0.47vw;
+    }
+    
+    .hover {
+        margin-top: -9.6vw;
+        width: 12.4vw;
+        height: 5vw;
+        margin-left: 22.3vw;
+        margin-right: 0vw;
+        border-radius: 0.7vw 0.7vw 0vw 0.7vw ;
+        padding-top: 0.7vw;
+        position: relative;
+    }
+
+    .hover:before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 5vw;
+        left: 10.9vw;
+        border: 0.75vw solid;
+        border-color: var(--pale-blue) var(--pale-blue) transparent transparent;
+        
+    }
+    
+    .value {
+        margin-left: 1.75vw;
+        font-size: 2.6vw;
+    }
+    
+    .value-info {
+        margin-top: 1.2vw;
+        margin-left: 0.95vw;
+        font-size: 0.9vw;
+    }
+    
+    .min {
+        font-size: 0.9vw;
+        margin-top: 5vw;
+        margin-left: 2.6vw;
+    }
+    
+    .max {
+        font-size: 0.8vw;
+        margin-left: 31.5vw;
+        margin-top: -1.2vw;
+    }
+    
+    .attribution {
+        margin-top: 5vw;
+        font-size: 1.5vw;
+        margin-bottom: 5vw;
+    }
+}
